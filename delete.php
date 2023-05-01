@@ -1,0 +1,10 @@
+<?php
+include "connection.php";
+if(isset($_GET['id'])){
+    $id= $_GET['id'];
+    $sql= "DELETE from `students` where id=$id";
+    $conn->query($sql);
+}
+header('location:/crude_operations/work1/work/index.php');
+exit;
+?>
