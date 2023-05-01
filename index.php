@@ -54,7 +54,7 @@
           <td>$row[password]</td>
           <td>$row[gender]</td>
           <td>
-          <a class='btn btn-success' href='export-pdf.php'>pdf</a>
+          <a class='btn btn-info' href='export-pdf.php'>Export</a>
 
             <a class='btn btn-success' href='update.php?id=$row[id]'>Edit</a>
             <a class='btn btn-danger' href='delete.php?id=$row[id]'>Delete</a>
