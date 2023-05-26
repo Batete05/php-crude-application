@@ -14,7 +14,7 @@ $success="";
 
 if($_SERVER["REQUEST_METHOD"]=='GET'){
     if(!isset($_GET['id'])){
-        header("location:crude_operations/work1/work/index.php");
+        header("location:crude_operations/work/index.php");
         exit;
     }
     $id=$_GET['id'];
@@ -23,7 +23,7 @@ if($_SERVER["REQUEST_METHOD"]=='GET'){
     $row=$result->fetch_assoc();
 
     while(!$row){
-        header("location:crude_operations/work1/work/index.php");
+        header("location:crude_operations/work/index.php");
         exit;
     }
     $fname=$row["fname"];

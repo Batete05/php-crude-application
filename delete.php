@@ -5,6 +5,6 @@ if(isset($_GET['id'])){
     $sql= "DELETE from `students` where id=$id";
     $conn->query($sql);
 }
-header('location:/crude_operations/work1/work/index.php');
+header('location:/crude_operations/work/index.php');
 exit;
 ?>
